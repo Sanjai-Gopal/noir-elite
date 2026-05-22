@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Inter:wght@200;300;400;500;600&family=JetBrains+Mono:wght@300;400;500&family=Syne:wght@400;550;700;800&family=Montserrat:wght@100;200;300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-syne: "Syne", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --color-noir-950: #050505;
+  --color-noir-900: #0c0c0c;
+  --color-noir-800: #141414;
+  --color-noir-700: #1e1e20;
+  --color-silver-100: #ffffff;
+  --color-silver-200: #e5e5eb;
+  --color-silver-300: #d1d1d6;
+  --color-silver-400: #9e9e9e;
+}
+
+/* Custom Base Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #050505;
+  color: #e5e5e5;
+  font-family: var(--font-sans);
+  scrollbar-width: thin;
+  scrollbar-color: #333333 #050505;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Custom Glassmorphism Panels */
+.glass-panel {
+  background: rgba(9, 9, 9, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.glass-nav {
+  background: rgba(3, 3, 3, 0.7);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Kinetic Grain / Noise overlay */
+.noise-bg {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.stardust-overlay {
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  pointer-events: none;
+  mix-blend-overlay: overlay;
+  opacity: 0.03;
+}
+
+.ambient-spotlight {
+  background: radial-gradient(circle at 50% 40%, #1a1a1a 0%, #050505 70%);
+}
+
+/* Custom letter-spacing utilities */
+.letter-spacing-extra {
+  letter-spacing: 0.35em;
+}
+
+.letter-spacing-mega {
+  letter-spacing: 0.6em;
+}
+
+/* Custom text stroke for a stark luxury aesthetic */
+.text-stroke-thin {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+  color: transparent;
+}
+
+.text-stroke-silver {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  color: transparent;
+  transition: all 0.5s ease;
+}
+
+.text-stroke-silver:hover {
+  -webkit-text-stroke: 1px transparent;
+  color: #ffffff;
+}
+
+/* Custom transitions and ease curves */
+.transition-luxury {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.transition-luxury-long {
+  transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-float-gentle {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-ring {
+  animation: pulse-ring 4s ease-in-out infinite;
+}
+
+/* ==========================================
+   HIGH-END EDITORIAL LIGHT THEME SYSTEM
+   ========================================== */
+html.light-theme, html.light-theme body {
+  background-color: #F9F9F6 !important;
+  color: #111111 !important;
+  scrollbar-color: #cccccc #F9F9F6 !important;
+}
+
+/* Glass and Ambient Panels Overrides */
+.light-theme .glass-panel {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+.light-theme .glass-nav {
+  background: rgba(249, 249, 246, 0.75) !important;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme .ambient-spotlight {
+  background: radial-gradient(circle at 50% 40%, #f7f7f3 0%, #F9F9F6 70%) !important;
+}
+
+.light-theme .text-stroke-thin {
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.12) !important;
+  color: transparent !important;
+}
+
+.light-theme .text-stroke-silver {
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.35) !important;
+  color: transparent !important;
+  transition: all 0.5s ease;
+}
+
+.light-theme .text-stroke-silver:hover {
+  -webkit-text-stroke: 1px transparent !important;
+  color: #000000 !important;
+}
+
+/* Background class transformations */
+.light-theme .bg-\[\#050505\] { background-color: #F9F9F6 !important; }
+.light-theme .bg-\[\#0c0c0c\] { background-color: #ffffff !important; }
+.light-theme .bg-\[\#090909\] { background-color: #f5f5f0 !important; }
+.light-theme .bg-\[\#080808\] { background-color: #ffffff !important; }
+.light-theme .bg-\[\#0a0a0a\] { background-color: #ffffff !important; }
+.light-theme .bg-black\/40 { background-color: rgba(255, 255, 255, 0.6) !important; }
+.light-theme .bg-black\/50 { background-color: rgba(255, 255, 255, 0.8) !important; }
+.light-theme .bg-black\/80 { background-color: rgba(255, 255, 255, 0.93) !important; }
+.light-theme .bg-black { background-color: #ffffff !important; }
+.light-theme .bg-\[\#ffffff\]\/\[0\.02\] { background-color: rgba(0, 0, 0, 0.02) !important; }
+
+/* Typography adjustments */
+.light-theme .text-white { color: #111111 !important; }
+.light-theme .text-\[\#e5e5e5\] { color: #222222 !important; }
+.light-theme .text-[#ffffff]/40 { color: rgba(0, 0, 0, 0.45) !important; }
+.light-theme .text-silver-100 { color: #111111 !important; }
+.light-theme .text-silver-200 { color: #333333 !important; }
+.light-theme .text-silver-300 { color: #444440 !important; }
+.light-theme .text-silver-400 { color: #666660 !important; }
+.light-theme .text-silver-500 { color: #777770 !important; }
+.light-theme .text-white\/30 { color: rgba(0, 0, 0, 0.35) !important; }
+.light-theme .text-white\/40 { color: rgba(0, 0, 0, 0.45) !important; }
+.light-theme .text-white\/50 { color: rgba(0, 0, 0, 0.55) !important; }
+.light-theme .text-white\/60 { color: rgba(0, 0, 0, 0.65) !important; }
+.light-theme .text-white\/80 { color: rgba(0, 0, 0, 0.85) !important; }
+
+/* Micro-borders and separations */
+.light-theme .border-white\/5 { border-color: rgba(0, 0, 0, 0.07) !important; }
+.light-theme .border-white\/10 { border-color: rgba(0, 0, 0, 0.12) !important; }
+.light-theme .border-white\/15 { border-color: rgba(0, 0, 0, 0.18) !important; }
+.light-theme .border-white\/20 { border-color: rgba(0, 0, 0, 0.22) !important; }
+.light-theme .border-white\/30 { border-color: rgba(0, 0, 0, 0.32) !important; }
+.light-theme .border-white\/40 { border-color: rgba(0, 0, 0, 0.42) !important; }
+.light-theme .border-white\/50 { border-color: rgba(0, 0, 0, 0.52) !important; }
+
+/* Modals and Overlays */
+.light-theme .bg-black\/95 { background-color: rgba(249, 249, 246, 0.98) !important; }
+.light-theme .hover\:bg-white\/5:hover { background-color: rgba(0, 0, 0, 0.035) !important; }
+.light-theme ::-webkit-scrollbar-track { background: #F9F9F6; }
+.light-theme ::-webkit-scrollbar-thumb { background: #d3d3cb; }
+.light-theme ::-webkit-scrollbar-thumb:hover { background: #a5a59d; }
+
+/* Buttons inside Light Mode (inverse behavior for premium contrast status) */
+.light-theme .bg-white.text-black {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+.light-theme .bg-white.text-black:hover {
+  background-color: #222222 !important;
+}
+.light-theme .hover\:bg-white:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+.light-theme .hover\:text-black:hover {
+  color: #ffffff !important;
+}
+.light-theme .bg-[#bf9f62].text-black {
+  background-color: #bf9f62 !important;
+  color: #000000 !important;
+}
+.light-theme .hover\:bg-\[\#e5e5eb\]:hover {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
