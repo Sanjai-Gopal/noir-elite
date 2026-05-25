@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import perfumeBottle from "./assets/images/perfume-bottle.png";
+import showroomBanner from "./assets/images/showroom-banner.png";
 import { motion, AnimatePresence } from "motion/react";
 import {
   ArrowDown,
@@ -355,7 +357,7 @@ export default function App() {
                   onClick={() => setSelectedProduct(PRODUCTS[0])} // L'Éternel Perfume
                 >
                   <img
-                     src="./assets/images/perfume-bottle.png"
+                     src={perfumeBottle}
                      alt="L'Éternel bottle preview"
                      className="w-14 h-18 object-cover rounded grayscale group-hover:grayscale-0 transition-luxury"
                   />
@@ -398,7 +400,7 @@ export default function App() {
                 <div className="col-span-1 lg:col-span-7 relative group overflow-hidden rounded-xl border border-white/5">
                   <div className="absolute inset-0 bg-black/10 z-10" />
                   <img
-                    src="./assets/images/showroom-banner.png"
+                    src={showroomBanner}
                     alt="Noir Elite architecture"
                     className="w-full aspect-[16/9] object-cover transition-all duration-700"
                   />
