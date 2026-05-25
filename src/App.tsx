@@ -355,10 +355,9 @@ export default function App() {
                   onClick={() => setSelectedProduct(PRODUCTS[0])} // L'Éternel Perfume
                 >
                   <img
-                    src="/src/assets/images/perfume-bottle.png"
-                    alt="L'Éternel bottle preview"
-                    className="w-14 h-18 object-cover rounded grayscale group-hover:grayscale-0 transition-luxury"
-                    referrerPolicy="no-referrer"
+                     src="./assets/images/perfume-bottle.png"
+                     alt="L'Éternel bottle preview"
+                     className="w-14 h-18 object-cover rounded grayscale group-hover:grayscale-0 transition-luxury"
                   />
                   <div>
                     <span className="font-mono text-[8px] text-silver-400/40 uppercase tracking-widest block">
@@ -397,12 +396,11 @@ export default function App() {
                 
                 {/* Col 1: High Resolution Showroom view */}
                 <div className="col-span-1 lg:col-span-7 relative group overflow-hidden rounded-xl border border-white/5">
-                  <div className="absolute inset-0 bg-black/40 z-10 transition-all duration-700 group-hover:bg-black/20" />
+                  <div className="absolute inset-0 bg-black/10 z-10" />
                   <img
-                    src="/src/assets/images/showroom-banner.png"
+                    src="./assets/images/showroom-banner.png"
                     alt="Noir Elite architecture"
-                    className="w-full aspect-[16/9] object-cover scale-100 group-hover:scale-105 transition-luxury-long grayscale group-hover:grayscale-0"
-                    referrerPolicy="no-referrer"
+                    className="w-full aspect-[16/9] object-cover transition-all duration-700"
                   />
                   <div className="absolute bottom-6 left-6 z-20 font-mono text-[10px] text-silver-400 tracking-wider flex items-center gap-2">
                     <Globe className="w-3.5 h-3.5 animate-spin" /> ARCHITECTURE RECORD NO. 8847/MILAN
