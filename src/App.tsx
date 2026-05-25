@@ -355,7 +355,7 @@ export default function App() {
                   onClick={() => setSelectedProduct(PRODUCTS[0])} // L'Éternel Perfume
                 >
                   <img
-                    src="/src/assets/images/perfume_bottle_1779439312618.png"
+                    src="/src/assets/images/perfume-bottle.png"
                     alt="L'Éternel bottle preview"
                     className="w-14 h-18 object-cover rounded grayscale group-hover:grayscale-0 transition-luxury"
                     referrerPolicy="no-referrer"
@@ -399,7 +399,7 @@ export default function App() {
                 <div className="col-span-1 lg:col-span-7 relative group overflow-hidden rounded-xl border border-white/5">
                   <div className="absolute inset-0 bg-black/40 z-10 transition-all duration-700 group-hover:bg-black/20" />
                   <img
-                    src="/src/assets/images/showroom_banner_1779439357740.png"
+                    src="/src/assets/images/showroom-banner.png"
                     alt="Noir Elite architecture"
                     className="w-full aspect-[16/9] object-cover scale-100 group-hover:scale-105 transition-luxury-long grayscale group-hover:grayscale-0"
                     referrerPolicy="no-referrer"

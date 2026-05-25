@@ -1,4 +1,7 @@
 import { Product, Collection, CampaignStory } from "./types";
+import campaignModel from "./assets/images/campaign-model.png";
+import perfumeBottle from "./assets/images/perfume-bottle.png";
+import showroomBanner from "./assets/images/showroom-banner.png";
 
 export const PRODUCTS: Product[] = [
   {
@@ -7,8 +10,8 @@ export const PRODUCTS: Product[] = [
     category: "MAISON DE PARFUM",
     price: "€380",
     originalPrice: "€450",
-    image: "/src/assets/images/perfume_bottle_1779439312618.png",
-    secondaryImage: "/src/assets/images/showroom_banner_1779439357740.png",
+    image: perfumeBottle,
+    secondaryImage: showroomBanner,
     description: "An olfactory kinetic exploration. Formulated from cold ash, pure obsidian distillate, white santal, and deep vetiver. Incased in basalt stone and raw-milled solid silver.",
     specifications: [
       "Top: Frozen Bergamot, Volcanic Ash",
@@ -34,8 +37,8 @@ export const PRODUCTS: Product[] = [
     name: "OBELISK ARCHITECTURAL TRENCH",
     category: "HAUTE COUTURE",
     price: "€4,200",
-    image: "/src/assets/images/campaign_model_1779439334289.png",
-    secondaryImage: "/src/assets/images/showroom_banner_1779439357740.png",
+    image: campaignModel,
+    secondaryImage: showroomBanner,
     description: "Sartorial shielding. Engineered with structural technical polymers to retain a severe geometric stance. Liquid silver double-breasted orbital fasteners.",
     specifications: [
       "Rigid high-collar construction",
@@ -63,7 +66,7 @@ export const PRODUCTS: Product[] = [
     price: "€750",
     originalPrice: "€900",
     image: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/campaign_model_1779439334289.png",
+    secondaryImage: campaignModel,
     description: "Aerodynamic face shield made of a single continuous block of hyper-dense dark silver magnesium alloy, supporting polarized monolithic light filters.",
     specifications: [
       "Laser-sintered matte magnesium frame",
@@ -90,7 +93,7 @@ export const PRODUCTS: Product[] = [
     category: "FOOTWEAR",
     price: "€1,850",
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/showroom_banner_1779439357740.png",
+    secondaryImage: showroomBanner,
     description: "Brutalist block silhouette footwear. Hand-molded full grain leather upper with laser-welded titanium composite support core.",
     specifications: [
       "120mm structural honeycomb block heel",
@@ -116,7 +119,7 @@ export const PRODUCTS: Product[] = [
     category: "HAUTE COUTURE",
     price: "€6,800",
     image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/campaign_model_1779439334289.png",
+    secondaryImage: campaignModel,
     description: "Ethereal meets structural. Flowing silk georgette bonded with fluid silver alloys, forming a continuous drape that contours to human anatomy like liquid metal.",
     specifications: [
       "Seamless invisible spine enclosure",
@@ -198,7 +201,7 @@ export const PRODUCTS: Product[] = [
     category: "ACCESSORIES",
     price: "€450",
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/campaign_model_1779439334289.png",
+    secondaryImage: campaignModel,
     description: "Bespoke continuous-surface band. Hand-beaten solid sterling silver cold-quenched in liquid helium to achieve crystalline metal stability.",
     specifications: [
       "Asymmetric twisted Möbius loop shape",
@@ -334,7 +337,7 @@ export const COLLECTIONS: Collection[] = [
     season: "WINTER COLLECTION 2026/27",
     tagline: "Sartorial armor for the post-organic eras.",
     description: "An architectural exploration of high-end human shielding. Designed with materials responding to micro-climatic fluctuations and severe urban silhouettes.",
-    heroImage: "/src/assets/images/campaign_model_1779439334289.png",
+    heroImage: campaignModel,
     manifesto: "In a world of excessive light and digitisation, NOIR ÉLITE returns to the solace of pure shadow. Every item is hand-milled, numbered, and treated as wearable sculpture.",
     coordinates: "48.8566º N, 2.3522º E [PARIS]"
   },
@@ -344,7 +347,7 @@ export const COLLECTIONS: Collection[] = [
     season: "SUMMER CAPSULE 2027",
     tagline: "Where volcanic chemistry meets sartorial precision.",
     description: "Infusing raw minerals into high-end silks. The garments adapt to the light, radiating subtle metallic chrome tints when hitting absolute darkness.",
-    heroImage: "/src/assets/images/showroom_banner_1779439357740.png",
+    heroImage: showroomBanner,
     manifesto: "Form follows texture. The interaction of carbon fiber vectors and organic silk georgettes produces garments which do not merely cover, but rather architecture the body.",
     coordinates: "45.4642º N, 9.1900º E [MILANO]"
   }
@@ -356,7 +359,7 @@ export const CAMPAIGNS: CampaignStory[] = [
     title: "SUBTERRANEAN SARTORIAL",
     subtitle: "Campaign Act I",
     description: "A spatial dialogue set in the brutalist volcanic vaults of Iceland. Shot inside deep volcanic chambers beneath frozen terrains.",
-    image: "/src/assets/images/showroom_banner_1779439357740.png",
+    image: showroomBanner,
     year: "2026",
     location: "REYKJAVÍK, IS"
   },
@@ -365,7 +368,7 @@ export const CAMPAIGNS: CampaignStory[] = [
     title: "THE ECLIPSE PROTOCOL",
     subtitle: "Campaign Act II",
     description: "Capturing models in pure dark silhouettes against extreme white reflectors on the outskirts of Tokyo.",
-    image: "/src/assets/images/campaign_model_1779439334289.png",
+    image: campaignModel,
     year: "2026",
     location: "SHIBUYA, JP"
   }
