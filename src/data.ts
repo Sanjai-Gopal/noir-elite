@@ -147,7 +147,7 @@ export const PRODUCTS: Product[] = [
     price: "€1,950",
     originalPrice: "€2,200",
     image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/showroom_banner_1779439357740.png",
+    secondaryImage: "./assets/images/showroom-banner.png",
     description: "A hard-shell structural clutch. Created through hyper-compressed carbon dust and biological leather fibers. Fastened with a magnetic gravity-lock clip.",
     specifications: [
       "Rigid carbon shell body",
@@ -174,7 +174,7 @@ export const PRODUCTS: Product[] = [
     category: "HAUTE COUTURE",
     price: "€2,400",
     image: "https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/showroom_banner_1779439357740.png",
+    secondaryImage: "./assets/images/showroom-banner.png",
     description: "Segmented insulated structure replicating geothermal rock layers. Coated with premium water-repellent liquid matte elastomer.",
     specifications: [
       "800-fill sustainable goose down insulation",
@@ -228,7 +228,7 @@ export const PRODUCTS: Product[] = [
     category: "ACCESSORIES",
     price: "€620",
     image: "https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/campaign_model_1779439334289.png",
+    secondaryImage: "./assets/images/campaign-model.png",
     description: "Second-skin protective tech-leather gloves featuring laser-guided joint flexibility matrices and capacitive fingertip overlays.",
     specifications: [
       "Ultra-thin premium nappa leather base",
@@ -255,7 +255,7 @@ export const PRODUCTS: Product[] = [
     price: "€1,200",
     originalPrice: "€1,450",
     image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/showroom_banner_1779439357740.png",
+    secondaryImage: "./assets/images/showroom-banner.png",
     description: "Anatomically mapped sneakers constructed around an skeletal nylon lattice shell, supporting a thermo-regulating breathable mesh sleeve.",
     specifications: [
       "Skeletal TPU heel counter arch suspension",
@@ -282,7 +282,7 @@ export const PRODUCTS: Product[] = [
     category: "LEATHER GOODS",
     price: "€2,250",
     image: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/showroom_banner_1779439357740.png",
+    secondaryImage: "./assets/images/showroom-banner.png",
     description: "Hexagonal outer exoskeleton shielding an expandable interior compartment. Engineered with water-repellent ballistic weave composites.",
     specifications: [
       "Dynamic load-distributing harness straps",
@@ -308,7 +308,7 @@ export const PRODUCTS: Product[] = [
     category: "MAISON DE PARFUM",
     price: "€160",
     image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
-    secondaryImage: "/src/assets/images/showroom_banner_1779439357740.png",
+    secondaryImage: "./assets/images/showroom-banner.png",
     description: "Emanates a dense atmosphere. Slow combustion of cold cypress resin, smoked birchwood logs, sweet patchouli leaf, and raw amber shards.",
     specifications: [
       "Soy-wax vegetable organic component",
